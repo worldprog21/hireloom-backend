@@ -20,6 +20,7 @@
     },
     "applicationStatus": {
       "type": "enumeration",
+      "default": "Pending",
       "enum": [
         "Pending",
         "Accepted",
@@ -37,6 +38,12 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "applications"
+    },
+    "interestReason": {
+      "type": "text"
+    },
+    "skills": {
+      "type": "text"
     }
   }
 }
